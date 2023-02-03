@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge ONE - Encriptador</title>
-</head>
-<body>
-    <header>
-        <img src="./images/logo.png" alt="alura logo" id="logo">
-    </header>
-    <main>
-        <section id="input-section">
-            <textarea name="text-area" id="text-input" cols="30" rows="10"></textarea>
-            <div id="alert-message">
-                <img src="./images/exclamation-icon.png" alt="exclamation">
-                <h6>Solo letras minúsculas y sin acentos</h6>
-            </div>
-            <div id="buttons">
-                <button class="button">Encriptar</button>
-                <button class="button">Desencriptar</button>
-            </div>
-        </section>
-        <section id="output-section">
-            <textarea name="text-are" id="text-output" cols="30" rows="10"></textarea>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Challenge ONE - Encriptador</title>
+    </head>
+    <body>
+        <div class="main-div">
+            <header>
+                <img src="./images/logo.png" alt="alura logo" class="logo" />
+            </header>
+            <section class="input-section">
+                <textarea class="text-area" id="text-input"></textarea>
+                <div>
+                    <div id="alert-message-div">
+                        <img src="./images/exclamation-icon.png" alt="exclamation" />
+                        <h6>Solo letras minúsculas y sin acentos</h6>
+                    </div>
+                    <div id="buttons-div">
+                        <button class="button" id="encrypt">Encriptar</button>
+                        <button class="button" id="decrypt">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="aside-div">
+            <section class="output-section">
+                <textarea class="text-area" id="text-output"></textarea>
+                <button class="button" id="copy">Copiar</button>
+            </section>
+        </div>
+    </body>
 </html>
