@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+* {
+    font-family: "Inter";
+    font-weight: 400;
+}
+
 body {
     display: flex;
     justify-content: space-between;
@@ -13,7 +18,23 @@ body {
 .logo {
     height: 48px;
 }
+.text-area {
+    font-size: 24px;
+    line-height: 150%;
 
+    border: none;
+    color: #0a3871;
+    /*text-transform: lowercase;*/
+    resize: none;
+}
+::placeholder {
+    color: #0a3871;
+}
+.text-area:focus {
+    outline: none;
+}
+
+/* ------------------- INPUT SIDE ------------------- */
 .input-section {
     margin: 5% 15%;
 
@@ -21,15 +42,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+/*
 #text-input {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-
-    color: #0a3871;
+    
 }
-
+*/
 #alert-message-div {
     margin: 5px;
     display: flex;
@@ -42,7 +59,6 @@ body {
 }
 #alert-message-div h6 {
     font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
@@ -58,10 +74,7 @@ body {
     border: 1px solid #0a3871;
     border-radius: 24px;
     background: #ffffff;
-    /* Font */
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -78,6 +91,7 @@ body {
     color: #ffffff;
 }
 
+/* ------------------- OUTPUT SIDE ------------------- */
 .aside-div {
     width: 30%;
     padding: 2%;
@@ -97,11 +111,10 @@ body {
 #text-output {
     width: 100%;
     margin-bottom: 10px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
     color: #495057;
+
+    background-image: url("/images/boy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: calc(65%);
 }
