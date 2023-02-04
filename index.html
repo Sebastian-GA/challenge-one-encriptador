@@ -21,8 +21,8 @@
                         <h6>Solo letras minúsculas y sin acentos</h6>
                     </div>
                     <div id="buttons-div">
-                        <button class="button" id="encrypt">Encriptar</button>
-                        <button class="button" id="decrypt">Desencriptar</button>
+                        <button class="button" id="encrypt" onclick="btnEncrypt()">Encriptar</button>
+                        <button class="button" id="decrypt" onclick="btnDecrypt()">Desencriptar</button>
                     </div>
                 </div>
             </section>
@@ -30,8 +30,9 @@
         <div class="aside-div">
             <section class="output-section">
                 <textarea class="text-area" id="text-output" readonly></textarea>
-                <button class="button" id="copy">Copiar</button>
+                <button class="button" id="copy" onclick="btnCopy()">Copiar</button>
             </section>
         </div>
+        <script src="./js/script.js"></script>
     </body>
 </html>
