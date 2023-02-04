@@ -6,14 +6,17 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     background-color: #e5e5e5;
-    padding: 2.8%;
+
+    padding: 2%;
 }
 
 .main-div {
     width: 65%;
+    padding-bottom: 2%;
 }
 .logo {
     height: 48px;
@@ -21,11 +24,12 @@ body {
 .text-area {
     font-size: 24px;
     line-height: 150%;
-
     border: none;
-    color: #0a3871;
-    /*text-transform: lowercase;*/
     resize: none;
+
+    color: #0a3871;
+    background: none;
+    /*text-transform: lowercase;*/
 }
 ::placeholder {
     color: #0a3871;
@@ -36,17 +40,17 @@ body {
 
 /* ------------------- INPUT SIDE ------------------- */
 .input-section {
-    margin: 5% 15%;
+    height: calc(100% - 50px);
+    margin: auto 15%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-/*
 #text-input {
-    
+    height: 100%;
 }
-*/
+
 #alert-message-div {
     margin: 5px;
     display: flex;
@@ -68,8 +72,7 @@ body {
 }
 .button {
     padding: 24px;
-    width: 48%;
-    height: 67px;
+    width: 47%;
 
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -97,24 +100,27 @@ body {
     padding: 2%;
     background: #ffffff;
 
-    /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 .output-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 #text-output {
-    width: 100%;
+    height: 100%;
     margin-bottom: 10px;
     color: #495057;
 
     background-image: url("/images/boy.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: calc(65%);
+    background-size: calc(20vw);
+}
+.output-section #copy {
+    width: 60%;
+    margin: 0 auto;
 }
