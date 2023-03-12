@@ -6,33 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <title>Challenge ONE - Encriptador</title>
+        <title>Challenge ONE | Encriptador</title>
     </head>
     <body>
-        <div class="main-div">
-            <header>
-                <img src="./images/logo.png" alt="alura logo" class="logo" />
-            </header>
-            <section class="input-section">
-                <textarea class="text-area" id="text-input" placeholder="Ingrese el texto aquí"></textarea>
-                <div>
-                    <div id="alert-message-div">
-                        <img src="./images/exclamation-icon.png" alt="exclamation" />
-                        <h6>Solo letras minúsculas y sin acentos</h6>
+        <header>
+            <img src="img/logo.png" alt="Alura logo" class="logo" />
+            <h1 class="header-title">Text Encrypter</h1>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div class="input-container">
+                    <textarea class="text-area input-text" id="text-input" placeholder="Insert text to encrypt"></textarea>
+                    <div id="alert-container">
+                        <img src="img/exclamation-icon.png" />
+                        <p>Only lowercase text</p>
                     </div>
-                    <div id="buttons-div">
-                        <button class="button" id="encrypt" onclick="btnEncrypt()">Encriptar</button>
-                        <button class="button" id="decrypt" onclick="btnDecrypt()">Desencriptar</button>
+                    <div id="buttons-container">
+                        <button class="button" id="encrypt" onclick="btnEncrypt()">Encrypt</button>
+                        <button class="button" id="decrypt" onclick="btnDecrypt()">Decrypt</button>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="aside-div">
-            <section class="output-section">
-                <textarea class="text-area" id="text-output" readonly></textarea>
-                <button class="button" id="copy" onclick="btnCopy()">Copiar</button>
-            </section>
-        </div>
-        <script src="./js/script.js"></script>
+
+                <div class="output-container">
+                    <textarea class="text-area output-text" id="text-output" readonly></textarea>
+                    <button class="button" id="copy" onclick="btnCopy()">Copy</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>by <a href="https://github.com/Sebastian-GA" target="_blank">@Sebastian-GA</a></p>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
