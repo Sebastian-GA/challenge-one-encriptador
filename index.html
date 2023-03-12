@@ -4,38 +4,38 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <title>Challenge ONE | Encriptador</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <img src="img/logo.png" alt="Alura logo" class="logo" />
             <h1 class="header-title">Text Encrypter</h1>
         </header>
 
-        <main>
-            <div class="main-container">
-                <div class="input-container">
-                    <textarea class="text-area input-text" id="text-input" placeholder="Insert text to encrypt"></textarea>
-                    <div id="alert-container">
-                        <img src="img/exclamation-icon.png" />
-                        <p>Only lowercase text</p>
-                    </div>
-                    <div id="buttons-container">
-                        <button class="button" id="encrypt" onclick="btnEncrypt()">Encrypt</button>
-                        <button class="button" id="decrypt" onclick="btnDecrypt()">Decrypt</button>
-                    </div>
+        <main class="main-container">
+            <div class="section-container">
+                <textarea class="text-area input-text" id="text-input" placeholder="Insert text to encrypt"></textarea>
+                <div class="alert-container">
+                    <img src="img/exclamation-icon.png" />
+                    <p>Only lowercase text</p>
                 </div>
+                <div class="buttons-container">
+                    <button class="button" id="encrypt" onclick="btnEncrypt()">Encrypt</button>
+                    <button class="button" id="decrypt" onclick="btnDecrypt()">Decrypt</button>
+                </div>
+            </div>
 
-                <div class="output-container">
-                    <textarea class="text-area output-text" id="text-output" readonly></textarea>
+            <div class="section-container">
+                <textarea class="text-area output-text" id="text-output" readonly></textarea>
+                <div class="buttons-container">
                     <button class="button" id="copy" onclick="btnCopy()">Copy</button>
                 </div>
             </div>
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>by <a href="https://github.com/Sebastian-GA" target="_blank">@Sebastian-GA</a></p>
         </footer>
         <script src="js/script.js"></script>
