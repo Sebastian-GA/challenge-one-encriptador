@@ -126,6 +126,14 @@ body {
     background-color: var(--color-light-blue);
 }
 
+.output-text {
+    background-image: url(../img/boy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+}
+
 @media screen and (min-width: 768px) {
     .main-container {
         grid-template-columns: 2fr 1fr;
