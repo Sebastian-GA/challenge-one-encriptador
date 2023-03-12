@@ -1,5 +1,5 @@
-const textInput = document.querySelector("#text-input");
-const textOutput = document.querySelector("#text-output");
+const textInput = document.getElementById("text-input");
+const textOutput = document.getElementById("text-output");
 
 const keys = [
     ["e", "enter"],
@@ -55,6 +55,8 @@ function btnDecrypt() {
 
 function btnCopy() {
     if (textOutput.value != "") {
+        textOutput.select();
+        textOutput.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(textOutput.value);
     }
 }
